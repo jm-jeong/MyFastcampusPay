@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fastcampus.common.WebAdapter;
 import com.fastcampus.membership.application.port.in.FindMembershipCommand;
 import com.fastcampus.membership.application.port.in.FindMembershipUseCase;
 import com.fastcampus.membership.domain.Membership;
 
-import common.WebAdapter;
 import lombok.RequiredArgsConstructor;
 
 @WebAdapter

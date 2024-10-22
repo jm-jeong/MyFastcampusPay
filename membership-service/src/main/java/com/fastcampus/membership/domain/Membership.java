@@ -1,7 +1,5 @@
 package com.fastcampus.membership.domain;
 
-import java.time.LocalDateTime;
-
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
