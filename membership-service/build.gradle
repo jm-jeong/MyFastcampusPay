@@ -22,10 +22,10 @@ dependencies {
     implementation 'org.jetbrains:annotations:23.0.0'
     testImplementation 'junit:junit:4.13.1'
     runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'mysql:mysql-connector-java'
 
     implementation project(path: ':common')
 
-//    runtimeOnly 'mysql:mysql-connector-java'
 //    implementation group: 'org.axonframework', name: 'axon-configuration', version: "$axonVersion"
 //    implementation group: 'org.axonframework', name: 'axon-spring-boot-starter', version: "$axonVersion"
 }
@@ -43,7 +43,7 @@ docker {
     name lowercaseProjectName+'-'+project.name + ":" + version
 
     //어떤 도커 파일
-    dockerfile file('./Dockerfile')
+    dockerfile file('../Dockerfile')
 
     //어떤 파일들을 Dockerfile 에 복사할 것인가
     files tasks.bootJar.outputs.files
