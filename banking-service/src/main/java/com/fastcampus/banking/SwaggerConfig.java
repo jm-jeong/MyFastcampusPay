@@ -19,7 +19,7 @@ public class SwaggerConfig {
 		return new Docket(DocumentationType.SWAGGER_2)
 			.apiInfo(apiInfo())
 			.select()
-			.apis(RequestHandlerSelectors.basePackage("com.fastcampuspay.banking"))
+			.apis(RequestHandlerSelectors.basePackage("com.fastcampus.banking"))
 			.paths(PathSelectors.any())
 			.build();
 	}
